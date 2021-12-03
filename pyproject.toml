@@ -1,9 +1,9 @@
 [tool]
 [tool.poetry]
-name = "CyberUserBot_Deployer"
+name = "NexusUserBot_Deployer"
 version = "1.0"
-description = "Automatic Deploy CyberUserBot to Heroku"
-authors = ["Faridxz"]
+description = "Automatic Deploy NexusUserBot to Heroku"
+authors = ["Nexuss"]
 [tool.poetry.dependencies]
 python = "^3.8"
 bs4 = "*"
