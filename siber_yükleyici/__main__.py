@@ -4,8 +4,8 @@ import random
 import requests
 import git as cyber
 from git import Repo
-from cyber_config.cyber import CyberConfig
-from cyber_installer import *
+from nexus_config.cyber import NexusConfig
+from nexus_installer import *
 import asyncio
 from .astring import main
 import os
@@ -111,7 +111,7 @@ if __name__ == "__main__":
 
     if os.path.isdir(CyberConfig.DESTINATION):
         rm_r(CyberConfig.DESTINATION)
-    repo = cyber.Repo.clone_from(cyberc, CyberConfig.DESTINATION, branch=CyberConfig.REPO_BRANCH)
+    repo = cyber.Repo.clone_from(cyberc, NexusConfig.DESTINATION, branch=CyberConfig.REPO_BRANCH)
     basarili(LANG['DOWNLOADED'])
     onemli(LANG['DEPLOYING'])
     app = hgit(heroku, repo, appname)
